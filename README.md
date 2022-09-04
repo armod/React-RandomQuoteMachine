@@ -1,1 +1,0 @@
-React random quote machine
