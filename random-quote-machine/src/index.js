@@ -1,17 +1,20 @@
 import React from 'react';
+import QuoteCard from './components/quotecard';
+import Layout from './components/layout';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {Wrapper} from './components/wrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout>
+      <Wrapper>
+        <QuoteCard
+          /* quote="Either write something worth reading or do something worth writing."
+          author='Benjamin Franklin'
+          newQbtn='new quote' */ 
+          />
+      </Wrapper>
+    </Layout>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
