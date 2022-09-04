@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import cytaty from "../quotes";
 import {MdFormatQuote} from 'react-icons/md';
+import {AiFillTwitterSquare} from 'react-icons/ai';
+import {FaTumblrSquare} from 'react-icons/fa'
 import { COLORS } from "../colors";
 
 const Wrapper = styled.div`
@@ -26,7 +28,7 @@ const TextWrapper = styled.div`
 `
 const Author = styled.div`
     align-self: flex-end;
-    margin: 10px 30px 10px 0;
+    margin: -40px 30px 10px 0;
     font-size: 18px;
     font-style: italic;
 `
@@ -40,6 +42,12 @@ const Button = styled.button`
 button:hover {
         background-color: ${COLORS.color1};
 }
+`
+const SocialIconWrapper = styled.div`
+    font-size: 40px;
+    align-self: flex-start;
+    margin: 0px 0 0 30px;
+    color: black;
 `
 
 const QuoteCard = (/* { quote, author, newQbtn } */) => {
@@ -70,6 +78,20 @@ const QuoteCard = (/* { quote, author, newQbtn } */) => {
                 </IconWrapper>
                 <p>{quote}</p>   
             </TextWrapper>
+            <SocialIconWrapper>
+                <ul>
+                    <li>
+                        <a href="https://www.twitter.com">
+                            <AiFillTwitterSquare />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tumblr.com">
+                            <FaTumblrSquare />
+                        </a>
+                    </li>
+                </ul>
+            </SocialIconWrapper>
             <Author>
                 <p>- {author}</p>
             </Author>

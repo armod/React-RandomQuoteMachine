@@ -18,6 +18,20 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    margin: 5px;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: blue;
+  }
 `
 
 const Layout = ({children}) => {
