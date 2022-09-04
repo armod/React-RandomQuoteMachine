@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/React-RandomQuoteMachine/random-quote-machine/static/js/main.acb98af5.js",
-    "index.html": "/React-RandomQuoteMachine/random-quote-machine/index.html",
-    "main.acb98af5.js.map": "/React-RandomQuoteMachine/random-quote-machine/static/js/main.acb98af5.js.map"
+    "main.js": "/React-RandomQuoteMachine/static/js/main.962659f7.js",
+    "index.html": "/React-RandomQuoteMachine/index.html",
+    "main.962659f7.js.map": "/React-RandomQuoteMachine/static/js/main.962659f7.js.map"
   },
   "entrypoints": [
-    "static/js/main.acb98af5.js"
+    "static/js/main.962659f7.js"
   ]
 }
