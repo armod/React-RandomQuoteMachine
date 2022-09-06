@@ -7,13 +7,13 @@ import {FaTumblrSquare} from 'react-icons/fa'
 import { COLORS } from "../colors";
 
 const Wrapper = styled.div`
-  width: 500px;
-  max-hight: 90vw;
-  border: 1px solid black;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  border-radius: 40px;
+    width: 500px;
+    max-height: 90vw;
+    border: 1px solid black;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
 `
 
 const IconWrapper = styled.div`
@@ -38,10 +38,6 @@ const Button = styled.button`
     text-align: center;
     margin: 15px 30px 20px 0 ;
     background-color: ${COLORS.color2};
-}
-button:hover {
-        background-color: ${COLORS.color1};
-}
 `
 const SocialIconWrapper = styled.div`
     font-size: 40px;
@@ -52,7 +48,7 @@ const SocialIconWrapper = styled.div`
 
 const QuoteCard = (/* { quote, author, newQbtn } */) => {
 
-    const [index, setIndex] = useState(4);
+    const [index, setIndex] = useState(0);
     const {quote, author} = cytaty[index];
 
     const randomQuote = () => {
@@ -81,12 +77,12 @@ const QuoteCard = (/* { quote, author, newQbtn } */) => {
             <SocialIconWrapper>
                 <ul>
                     <li>
-                        <a href="https://www.twitter.com">
+                        <a href="https://www.twitter.com/intent/tweet" target="_top">
                             <AiFillTwitterSquare />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.tumblr.com">
+                        <a href="https://www.tumblr.com" target="_top">
                             <FaTumblrSquare />
                         </a>
                     </li>
